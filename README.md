@@ -1,35 +1,41 @@
-# 🎵 React Music Player - Shazam Clone 🎧
+# 🎧 Spotify Clone - React Music Streaming App 🎶
 
-This is a fully responsive and modern music player application built using **React**, **Vite**, and **Redux Toolkit**. It utilizes the **Shazam Core API** from RapidAPI to fetch real-time music data like top charts, artist info, and song previews.
+A modern and responsive **Spotify-style music streaming app** built with **React**, **Vite**, **Tailwind CSS**, and **Redux Toolkit**. This project uses the **Shazam Core API** from RapidAPI to stream music, show trending tracks, and explore artists — all within a slick, Spotify-like UI.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 Discover Top Charts and Songs by Country
-- 🎙 Explore Songs by Artist and Genre
-- 🔊 Play and pause songs with real-time audio controls
-- 📱 Responsive design (mobile-friendly)
-- 🌐 Uses [Shazam Core API](https://rapidapi.com/) for music data
-- ⚡ Built with Vite for lightning-fast dev experience
+- 🎵 Browse top charts and trending music by country or genre
+- 🔍 Search for songs, artists, and albums
+- 👤 View artist profiles and related tracks
+- ⏯️ Real-time audio player with play, pause, next, and previous controls
+- 📱 Fully responsive layout — works on all screen sizes
+- ⚡ Built with Vite for fast development experience
 
 ---
 
-## 🛠️ Tech Stack
+## 🔧 Tech Stack
 
-- **Frontend**: React, Tailwind CSS
+- **Frontend**: React, Tailwind CSS, Vite
 - **State Management**: Redux Toolkit + RTK Query
+- **API**: Shazam Core API from RapidAPI
 - **Routing**: React Router DOM
-- **Audio Player**: HTML5 Audio API
-- **API**: Shazam Core API (RapidAPI)
-- **Build Tool**: Vite
+- **Audio**: HTML5 Audio API
 
 ---
 
-## 🔐 Environment Variables
+## 🌐 APIs Used
 
-Create a `.env` file in the root directory and add your RapidAPI credentials:
+- **Shazam Core API** → for real-time music data
+- **Geo API** (optional) → to detect user’s location and display local top charts
+
+---
+
+## 📂 Environment Setup
+
+Create a `.env` file in the root directory:
 
 ```env
 VITE_SHAZAM_CORE_RAPID_API_KEY=your_rapidapi_key_here
-VITE_GEO_API_KEY=your_geo_api_key_if_used
+VITE_GEO_API_KEY=your_geo_api_key_here
